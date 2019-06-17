@@ -1,0 +1,32 @@
+
+/*	The software was developed and is owned by ITS/NTIA, an agency of the 			*/
+/*	Federal Government.  It was created under Project Number 3141012-300,			*/
+/*	Video Quality Research, on November, 2007.						*/
+/*	Pursuant to title 15 United States Code Section 105, works 				*/
+/*	of Federal employees are not subject to copyright protection in the United States.	*/
+/*	The BVQM / CVQM / IVQM software is provided by ITS as a service 			*/
+/*	and is expressly provided 								*/
+/*	“AS IS.”  NEITHER ITS NOR NTIA MAKES ANY WARRANTY OF ANY 				*/
+/*	KIND, EXPRESS, IMPLIED OR STATUTORY, INCLUDING, WITHOUT 				*/
+/*	LIMITATION, THE IMPLIED WARRANTY OF MERCHANTABILITY, 					*/
+/*	FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT AND 					*/
+/*	DATA ACCURACY.  ITS/NTIA does not warrant or make any representations			*/
+/*	regarding the use of the software or the results thereof, including but not limited 	*/
+/*	to the correctness, accuracy, reliability or usefulness of the software. 		*/
+/*												*/
+/*	This software is free software but is protected by the following patents: 		*/
+/*	U.S. Patent 5,446,492, entitled "Perception-based Video Quality Measurement System"	*/
+/*	U.S. Patent 5,596,364, entitled “Perception-based Audio-Visual Synchronization 		*/
+/*	Measurement System”									*/
+/*	U.S. Patent 6,496,221, entitled “In-service Video Quality Measurement System 		*/
+/*	Utilizing an Arbitrary Bandwidth Ancillary Data Channel”				*/
+/*	U.S. Patent Application No. 60/726,926, entitled “Low Bandwidth Reduced Reference 	*/
+/*	Video Quality Measurement Method and Apparatus”						*/
+/*												*/
+/*	you can use, copy, modify and redistribute it						*/
+/*	upon your acceptance of these terms and conditions and upon your express 		*/
+/*	agreement to provide appropriate acknowledgments of ITS/NTIA’s ownership of		*/
+/*	and development of the software by keeping this exact text present in any 		*/
+/*	copied or derivative works								*/
+/*												*/
+
