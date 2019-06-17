@@ -25,3 +25,5 @@ Each metric is stored in this repository such that for the given version of a gi
 ```
 
 Readmes on how to use each metric are available under the name `<metric>_pc_readme.pdf`.
+
+Note that this distribution does not include the MATLAB Runtime, which must first be installed before running any of the compiled versions of these metrics. The runtime can be installed using `MCRInstaller.exe`, located [here](https://www.mathworks.com/products/compiler/matlab-runtime.html). Be aware that the compiled versions of the metrics were compiled in MATLAB R2013b (8.2), and future versions of MATLAB may cause the code not to run.
