@@ -1,8 +1,8 @@
 # VQM
 ## Video Quality Metrics
-This repository contains the Video Quality Metric (VQM) software developed by ITS.
+This repository contains the Video Quality Metric (VQM) software developed by ITS. A full description of each of the files provided here can be found <a href="https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/description-of-vqm-tools.aspx" target="_blank"> here on the ITS Web Site</a>.
 
-For each software package provides three download options: the MATLAB source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation are provided. 
+For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
 
 The available software packages are:
 
@@ -14,7 +14,7 @@ The available software packages are:
 | `psnr` | Peak Signal to Noise Ratio Search and PSNR Variable Frame Delay |
 | `vfd` | Variable Frame Delays |
 
-These VQM tools use full reference (FR) and reduced reference (RR) techniques. As such, quality estimation for a processed video sequence requires access to the original, high quality video sequence. BVQM provides a graphical user interface, batch processing, and all VQM developed by ITS from 2000 through 2013. CVQM provides a command line interface for the same VQMs for a single video sequence (i.e., processed video sequence and associated original sequence). FDF and VFD implement algorithms to calculate variable frame delay; these functions are also available within metrics supplied by BVQM and CVQM. PSNR implements the renown metric.  
+These VQM tools use full reference (FR) and reduced reference (RR) techniques. Thus, quality estimation for a processed video sequence requires access to the original, high quality video sequence. BVQM provides a graphical user interface, batch processing, and all VQMs developed by ITS from 2000 through 2013. CVQM provides a command line interface for the same VQMs for a single video sequence (i.e., processed video sequence and associated original sequence). FDF and VFD implement algorithms to calculate variable frame delay; these functions are also available within metrics supplied by BVQM and CVQM. PSNR implements the renown metric.  
 
 ## Usage
 
