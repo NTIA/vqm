@@ -26,7 +26,7 @@ Each metric is stored in this repository such that for the given version of a gi
 |- <nmae>_pc64_v123     # directory contains the 64-bit executable for that metric version.
 ```
 
-You may also download zipped versions of the `pc32` and `pc64` directories through Releases.
+You may also download zipped versions of the `pc32` and `pc64` directories through [Releases](https://github.com/NTIA/vqm/releases).
 
 Readmes on how to use each metric are available under the name `<name>_pc_readme.pdf`.
 
