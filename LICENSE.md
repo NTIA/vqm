@@ -11,3 +11,7 @@ You may improve, modify, and create derivative works of the software or any port
 You are solely responsible for determining the appropriateness of using and distributing the software and you assume all risks associated with its use, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and the unavailability or interruption of operation. This software is not intended to be used in any situation where a failure could cause risk of injury or damage to property. 
 
 Please provide appropriate acknowledgments of NTIA’s creation of the software in any copies or derivative works of this software.
+
+The algorithms contained within the IVQM Software are covered by two U.S. Patents:
+* U.S. Patent Number 5,446,492, entitled "A Perception-based Video Quality Measurement System," issued on August 29, 1995.
+* U.S. Patent Number 6,496,221, entitled "In-Service Video Quality Measurement System Utilizing an Arbitrary Bandwidth Ancillary Data Channel," issued December 17, 2002.
