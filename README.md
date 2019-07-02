@@ -1,6 +1,6 @@
 # VQM
 ## Video Quality Metrics
-This repository contains the Video Quality Metric (VQM) software developed by ITS. A full description of each of the files provided here can be found <a href="https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/description-of-vqm-tools.aspx" target="_blank"> here on the ITS Web Site</a>.
+This repository contains the Video Quality Metric (VQM) software developed by ITS. A full description of each of the files provided here can be found <a href="https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/description-of-vqm-tools.aspx" target="_blank"> here on the ITS Web Site</a>. The VQM tools are available free of charge for any commercial or non-commercial use, in accordance with the terms described in the [LICENSE](https://github.com/NTIA/vqm/blob/master/LICENSE.md).
 
 For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
 
