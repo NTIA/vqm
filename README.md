@@ -1,10 +1,16 @@
-# VQM
-## Video Quality Metrics
-This repository contains the Video Quality Metric (VQM) software developed by ITS. A full description of each of the files provided here can be found <a href="https://www.its.bldrdoc.gov/resources/video-quality-research/guides-and-tutorials/description-of-vqm-tools.aspx" target="_blank"> here on the ITS Web Site</a>. The VQM tools are available free of charge for any commercial or non-commercial use, in accordance with the terms described in the [LICENSE](https://github.com/NTIA/vqm/blob/master/LICENSE.md).
+# Video Quality Metric (VQM)
 
-For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
+This repository provides an archival record of video quality metric (VQM) research performed by ITS between 1989 and 2011. 
+This research focused on full reference (FR) and reduced reference (RR) methods, which compare a processed video sequence with an original, high quality video sequence. 
+Thus, quality estimation for a processed video sequence requires access to the original, high quality video sequence. 
 
-The available software packages are:
+This software has not been maintained since 2013 and is provided for archival and research purposes only. 
+ITS does not have the funding to perform troubleshooting. 
+All souce code was developed for MATLAB® R2013b (8.2). Future versions of MATLAB may cause the code not to run.
+
+These tools are available free of charge for any commercial or non-commercial use, in accordance with the terms described in the [LICENSE](https://github.com/NTIA/vqm/blob/master/LICENSE.md).
+
+More information on these tools, including publications that fully document the VQM metrics and INLSA algorithm, can be found on the [ITS website](https://its.ntia.gov/research-topics/video-quality-research/software/).
 
 | Name | Title |
 | ---- | ----- |
@@ -13,11 +19,21 @@ The available software packages are:
 | `fdf` | Estimate HRC Fraction Dropped Frames using RR and NR VQMs |
 | `psnr` | Peak Signal to Noise Ratio Search and PSNR Variable Frame Delay |
 | `vfd` | Variable Frame Delays |
+| `inlsa` | Iterated Nested Least Squares Algorithm, for combining multiple datasets |
+| `screening` | Methods to screen subjects in a subjective test |
+| `si` | Spatial Information Filter |
 
-These VQM tools use full reference (FR) and reduced reference (RR) techniques. Thus, quality estimation for a processed video sequence requires access to the original, high quality video sequence. BVQM provides a graphical user interface, batch processing, and all VQMs developed by ITS from 2000 through 2013. CVQM provides a command line interface for the same VQMs for a single video sequence (i.e., processed video sequence and associated original sequence). FDF and VFD implement algorithms to calculate variable frame delay; these functions are also available within metrics supplied by BVQM and CVQM. PSNR implements the renown metric.  
 
-## Usage
+## Video Quality Metrics
 
+The following VQM tools use FR and RR techniques. 
+BVQM provides a graphical user interface, batch processing, and all VQMs released by ITS between 2000 and 2013. 
+CVQM provides a command line interface for the same VQMs for a single video sequence (i.e., processed video sequence and associated original sequence). 
+CVQM demonstrates how to split the metric calculation for an RR workflow.
+FDF and VFD implement algorithms to calculate variable frame delay; these functions are also available within metrics supplied by BVQM and CVQM. 
+PSNR implements the renown metric. 
+
+For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
 Each metric is stored in this repository such that for the given version of a given `<name>` from the above table:
 ``` 
 + <name>
@@ -32,6 +48,21 @@ Readmes on how to use each metric are available under the name `<name>_pc_readme
 
 Note that this distribution does not include the MATLAB Runtime, which must first be installed before running any of the compiled versions of these metrics. The runtime can be installed using `MCRInstaller.exe`, located [here](https://www.mathworks.com/products/compiler/matlab-runtime.html). Be aware that the compiled versions of the metrics were compiled in MATLAB R2013b (8.2). Future versions of MATLAB may cause the code not to run. This issue applies to both the compiled code and the source code. 
 
+## Iterated Nested Least Squares Algorithm (INLSA)
+
+The `inlsa` directory contains MATLAB code implementing INLSA. 
+This algorithm that allows multiple subjective datasets to be fitted to a single subjective scale. 
+INLSA computes the fit from a common set of objective metrics.
+
+## Subject Screening
+The `subject_screening` directory contains four methods for screeing subjects.
+
+## Spatial Information (SI) Filter
+
+The `si` directory contains MATLAB code implementing the spatial information (SI) filter. 
+This filter detects long edges and estimates edge angle. 
+The filter size can be adjusted to any odd number size (e.g., 13 by 13 pixels, 21 by 21 pixels).
+
 ## Contact
 
-For questions, contact Margaret Pinson, (303) 497-3579, <a href="mailto:mpinson@ntia.gov">mpinson@ntia.gov</a>
+For questions, contact Margaret Pinson, (720) 601-7314, <a href="mailto:mpinson@ntia.gov">mpinson@ntia.gov</a>
