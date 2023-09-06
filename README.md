@@ -1,4 +1,4 @@
-# Video Quality Metric (VQM)
+# Video Quality Metric (VQM) Archival Repository
 
 This repository provides an archival record of video quality metric (VQM) research performed by ITS between 1989 and 2011. 
 This research focused on full reference (FR) and reduced reference (RR) methods, which compare a processed video sequence with an original, high quality video sequence. 
@@ -12,7 +12,7 @@ These tools are available free of charge for any commercial or non-commercial us
 
 More information on these tools, including publications that fully document the VQM metrics and INLSA algorithm, can be found on the [ITS website](https://its.ntia.gov/research-topics/video-quality-research/software/).
 
-| Name | Title |
+| Tool | Description |
 | ---- | ----- |
 | `bvqm` | Batch Video Quality Metric |
 | `cvqm` | Command Line Video Quality Metric |
@@ -24,14 +24,38 @@ More information on these tools, including publications that fully document the 
 | `si` | Spatial Information Filter |
 
 
-## Video Quality Metrics
+## Video Quality Metrics: BVQM, CVQM, FDF, PSNR, and VFD
 
-The following VQM tools use FR and RR techniques. 
-BVQM provides a graphical user interface, batch processing, and all VQMs released by ITS between 2000 and 2013. 
-CVQM provides a command line interface for the same VQMs for a single video sequence (i.e., processed video sequence and associated original sequence). 
+The VQM software tools provide both standardized and non-standardized methods for measuring the video quality of digital video systems. 
+Each VQM tool estimates how people perceive video quality. 
+These VQM algorithms compare the processed video (output) with the original video (input). 
+These models are suitable when the original video is good quality or better. 
+Quality problems from the camera and original production are not considered. 
+
+Although ITS released several metrics, the most impactful metrics for video quality assessment are as follows:
+
+- NTIA General Model, referred to as 'VQM' in literature, as given in the ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), [this report](https://its.ntia.gov/publications/details.aspx?pub=2423), and [this journal article](https://its.ntia.gov/publications/details.aspx?pub=2576). Finalized in 2001.
+- NTIA Developers Model, a fast running variant of the General Model, described in [this report](https://its.ntia.gov/publications/details.aspx?pub=2423). Finalized in 2001.
+- NTIA Video Quality Model for Variable Frame Delay (VQM_VFD), described in [this report](https://its.ntia.gov/publications/details.aspx?pub=2556). Finalized in 2011.
+
+The Batch Video Quality Metric (BVQM) Software performs out-of-service, lab bench testing. 
+BVQM can processing and analyses of multiple video scenes and multiple video systems at once. 
+BVQM reads video sequences from files, and reports results to the screen. 
+BVQM includes a variety of calibration options, quality models, and graphical presentation of results. 
+For an overview of the BVQM tool, click [here](https://its.ntia.gov/publications/details.aspx?pub=2558).
+
+The Command Line Video Quality Metric (CVQM) Software is a command line program for performing out-of-service, lab bench testing. 
+The video quality calibration and metric algorithms within CVQM are basically identically to those offered by BVQM. 
+The two differences are that (1) CVQM is called from a command line (e.g., Windows Accessory "Command Prompt"), and (2) CVQM cannot compare the results from multiple video clips to improve calibration accuracy.
+
+CVQM runs on one pair of video files at a time, and writes results to files. 
 CVQM demonstrates how to split the metric calculation for an RR workflow.
+For an overview of the CVQM tool, click [here](cvqm.md).
+
 FDF and VFD implement algorithms to calculate variable frame delay; these functions are also available within metrics supplied by BVQM and CVQM. 
-PSNR implements the renown metric. 
+
+File `psnr.m` calculates peak signal to noise ratio (PSNR) according to ITU-T Rec. J.340. 
+It also computes PSNR with variable frame delays removed (PSNR-VFD). These metrics are also available in the BVQM and CVQM software.
 
 For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
 Each metric is stored in this repository such that for the given version of a given `<name>` from the above table:
@@ -50,18 +74,25 @@ Note that this distribution does not include the MATLAB Runtime, which must firs
 
 ## Iterated Nested Least Squares Algorithm (INLSA)
 
-The `inlsa` directory contains MATLAB code implementing INLSA. 
-This algorithm that allows multiple subjective datasets to be fitted to a single subjective scale. 
-INLSA computes the fit from a common set of objective metrics.
+The inlsa directory contains an iterated nested least-squares algorithm (INLSA) for fitting multiple data sets
+
+INLSA is an algorithm that allows multiple subjective datasets to be fitted to a single subjective scale. 
+INLSA computes the fit from a common set of objective metrics. 
+Files inlsa.m and pars_inlsa.m implement INLSA.
+File inlsa_demo.m creates made-up data for three (3) experiments and plots that data before and after running INLSA. The user can actually see what INLSA does to the data. Also the user gets a concrete example of how to call INLSA.  The user can just replace the made-up data with real data and the use INLSA.
+
+- Click [here](https://its.ntia.gov/publications/2428.aspx) for a reference. This document fully describes the algorithm.
+- Click [here](https://its.ntia.gov/publications/2578.aspx) for a comparison of INLSA and subjective mapping. This paper demonstrates why data from different subjective tests must be fitted.
+- Click [here](https://its.ntia.gov/publications/2494.aspx) for an example of how multiple subjective datasets can be combined using overlapping subjective datasets.
 
 ## Subject Screening
-The `subject_screening` directory contains four methods for screeing subjects.
+The screening directory contains four methods for screening subjects during a subjective test.
 
 ## Spatial Information (SI) Filter
 
-The `si` directory contains MATLAB code implementing the spatial information (SI) filter. 
+The si directory contains MATLAB code implementing the spatial information (SI) filter. 
 This filter detects long edges and estimates edge angle. 
-The filter size can be adjusted to any odd number size (e.g., 13 by 13 pixels, 21 by 21 pixels).
+The filter size can be adjusted to any odd number size (e.g., 13 by 13 pixels or 21 by 21 pixels).
 
 ## Contact
 
