@@ -21,7 +21,8 @@ The CVQM software provides a clean implementation of these VQM models.
 It is intended to be ported into other programming languages or to be called from other software. 
 
 ## Calibration Options
-The following calibration options are available:
+The following calibration options are available. 
+Technical details are available in [TR-02-392](https://its.ntia.gov/publications/details?pub=2423) and [TR-06-433b](https://its.ntia.gov/publications/details?pub=2465).
 
 ### 'none'
 No calibration will be performed. Assume that the first frame in original and processed video files align temporally. Run model with default calibration values which assumes that the processed video file is perfectly calibrated.
