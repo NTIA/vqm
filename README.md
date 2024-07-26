@@ -41,25 +41,25 @@ BVQM can processing and analyses of multiple video scenes and multiple video sys
 BVQM reads video sequences from files, and reports results to the screen. 
 BVQM includes a variety of calibration options, quality models, and graphical presentation of results. 
 
-BVQM contains unnecessary functionality and residual code remaining from the metric development process. 
-
 * BVQM_pc32_v20 has BVQM version 2.0, compiled for 32-bit Windows operating systems.
 * BVQM_pc64_v20 has BVQM version 2.0, compiled for 64-bit Windows operating systems.
 * BVQM_src_v20 has MATLAB source code for BVQM 2.0.
 * [Documentation](https://its.ntia.gov/publications/details.aspx?pub=2558)
 
+BVQM contains unnecessary functionality and residual code remaining from the metric development process. 
+
 ### Command Line Video Quality Metric (CVQM) Software
 CVQM is a Windows command line program for performing out-of-service / lab bench testing. The video quality calibration and metric algorithms within CVQM are basically identically to those offered by BVQM. 
 The two differences are that (1) CVQM is called from a command line (e.g., Windows Accessory "Command Prompt"), and (2) CVQM cannot compare the results from multiple video clips to improve calibration accuracy.  
 CVQM runs on one pair of video files at a time, and writes results to files. 
-See [here](CVQM.md) for more information.
-
-CVQM is a clean implementation of the VQM metrics that are available in BVQM. 
-The software functionality is split to support an in-service RR system (i.e., live calculations  on the upstream and downstream video feeds, communicating via a secondary communication channel). 
 
 * CVQM_pc32_v30 has CVQM version 3.0 compiled for the 32-bit Windows operating system.
 * CVQM_pc64_v30 has CVQM version 3.0 compiled for the 64-bit Windows operating system.
-* CVQM_src_v30 has MATLAB source code for CVQM version 3.0.
+* CVQM_src_v30 has MATLAB source code for CVQM version 3.0.\
+* [Documentation](CVQM.md)
+
+CVQM is a clean implementation of the VQM metrics that are available in BVQM. 
+The software functionality is split to support an in-service RR system (i.e., live calculations  on the upstream and downstream video feeds, communicating via a secondary communication channel). 
 
 ### PSNR
 This command-line MATALAB software calculates peak signal to noise ratio (PSNR) according to ITU-T Rec. J.340. Also computes PSNR with variable frame delays removed (PSNR-VFD). These metrics are also available in the BVQM and CVQM software.
@@ -90,4 +90,4 @@ The code cannot be compiled or run on modern operating systems.
 
 ## Contact
 
-For questions, contact Margaret Pinson, (303) 497-3579, <a href="mailto:mpinson@ntia.gov">mpinson@ntia.gov</a>
+For questions, contact Margaret Pinson, <a href="mailto:mpinson@ntia.gov">mpinson@ntia.gov</a>
