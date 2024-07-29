@@ -5,7 +5,6 @@ The VQM algorithms estimate how people perceive video quality. These VQM algorit
 The VQM tools are available free of charge for any commercial or non-commercial use, in accordance with the terms described in the [LICENSE](https://github.com/NTIA/vqm/blob/master/LICENSE.md).
 
 For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
-These software packages are no longer supported.
 
 The available software packages are:
 
@@ -26,7 +25,7 @@ Each metric is stored in this repository such that for the given version of a gi
 + <name>
 |- <name>_source_v123   # directory contains the source for that metric version.
 |- <name>_pc32_v123     # directory contains the 32-bit executable for that metric version. 
-|- <nmae>_pc64_v123     # directory contains the 64-bit executable for that metric version.
+|- <name>_pc64_v123     # directory contains the 64-bit executable for that metric version.
 ```
 
 Readmes on how to use each metric are available under the name `<name>_pc_readme.pdf`.
@@ -37,7 +36,7 @@ Note that this distribution does not include the MATLAB Runtime, which must firs
 
 ### Batch Video Quality Metric (BVQM) Software 
 BVQM is a Windows program for performing out-of-service / lab bench testing. 
-BVQM can processing and analyses of multiple video scenes and multiple video systems at once. 
+BVQM can perform processing and analyses of multiple video scenes and multiple video systems at once. 
 BVQM reads video sequences from files, and reports results to the screen. 
 BVQM includes a variety of calibration options, quality models, and graphical presentation of results. 
 
