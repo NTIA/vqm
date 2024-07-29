@@ -12,8 +12,8 @@ Type 1 errors are fatal data input/output issues (e.g., operation cannot continu
 The following VQM models options are available:
 
 * 'none'- No model will be calculated - run calibration only (see below).
-* 'general' - NTIA General Model, as given in the ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), and [TR-02-392](https://its.ntia.gov/publications/details?pub=2423). 
-* 'developers' - Developer's model, a fast running variant of the General Model, described in [TR-02-392](https://its.ntia.gov/publications/details?pub=2423)
+* 'general' - NTIA General Model, as given in the ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), and [NTIA TR-02-392](https://its.ntia.gov/publications/details?pub=2423). 
+* 'developers' - Developer's model, a fast running variant of the General Model, described in [NTIA TR-02-392](https://its.ntia.gov/publications/details?pub=2423)
 * 'lowbw' - Low Bandwidth Model, described [here](https://its.ntia.gov/publications/details?pub=2575)
 * 'fastlowbw' - Fast Low Bandwidth Model, a fast running variant of the low bandwidth model 
 
@@ -22,7 +22,7 @@ It is intended to be ported into other programming languages or to be called fro
 
 ## Calibration Options
 The following calibration options are available. 
-Technical details are available in [TR-02-392](https://its.ntia.gov/publications/details?pub=2423) and [TR-06-433b](https://its.ntia.gov/publications/details?pub=2465).
+Technical details are available in [NTIA TR-02-392](https://its.ntia.gov/publications/details?pub=2423) and [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465).
 
 ### 'none'
 No calibration will be performed. Assume that the first frame in original and processed video files align temporally. Run model with default calibration values which assumes that the processed video file is perfectly calibrated.
@@ -31,25 +31,25 @@ No calibration will be performed. Assume that the first frame in original and pr
 Read the calibration file created on a previous run. The values on the beginning of each line may be manually modified.
 
 ### 'rrcal' 
-Perform reduced reference calibration as given in ntia_tr_06_433a.pdf (except assume no spatial scaling). These algorithms use random processes, which may yield slightly different results from one run to another. 
+Perform reduced reference calibration as given in [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465) without spatial scaling. These algorithms use random processes, which may yield slightly different results from one run to another. 
 It is highly recommended that rrcal results be median filtered across 7 or more different video sequences that have been sent through the same video system (see Calibration Note below).
 
 ### 'rrcalscale' 
-Perform reduced reference calibration as given in ntia_tr_06_433a.pdf, including estimating spatial scaling (e.g., stretch). These algorithms use random processes, which may yield slightly different results from one run to another. 
+Perform reduced reference calibration as given in [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465), including estimating spatial scaling (e.g., stretch). These algorithms use random processes, which may yield slightly different results from one run to another. 
 It is highly recommended that rrcalscale results be median filtered across 7 or more different video sequences that have been sent through the same video system (see Calibration Note below).
 
 ### 'rrcal2' 
-Improved version of 'rrcal' - version 2, as specified in ITU-T Recommendation J.244 and ntia_tr_08_433b.pdf (see also 'rrcal2scale'). Includes estimate of Cb and Cr gain and offset; and slightly improved luminance gain & offset algorithm.
+Improved version of 'rrcal' - version 2, as specified in ITU-T Recommendation J.244 and [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465) (see also 'rrcal2scale'). Includes estimate of Cb and Cr gain and offset; and slightly improved luminance gain & offset algorithm.
 
 ### 'rrcal2scale' 
-Improved version of 'rrcalscale' - version 2, as specified in ITU-T Recommendation J.244 and ntia_tr_08_433b.pdf (see also 'rrcal2'). Includes estimate of Cb and Cr gain and offset; and slightly improved luminance gain & offset algorithm.
+Improved version of 'rrcalscale' - version 2, as specified in ITU-T Recommendation J.244 and [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465) (see also 'rrcal2'). Includes estimate of Cb and Cr gain and offset; and slightly improved luminance gain & offset algorithm.
 
 ### 'frcal' 
-Perform full reference bandwidth calibration as given in ANSI T1.801.03-2003, ITU-T J.144 (03/04), and ITU-R BT.1683 (06/04). 
+Perform full reference bandwidth calibration as given in ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), and [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465). 
 Preferably, results should be median filtered across several different video sequences that have been sent through the same video system (see Calibration Note below).
 
 ### 'frtime' 
-Performs full reference temporal registration and valid region estimation as given in ANSI T1.801.03-2003, ITU-T J.144 (03/04), and ITU-R BT.1683 (06/04). No other calibration will be performed. 
+Performs full reference temporal registration and valid region estimation as given in ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), and [NTIA TR-06-433b](https://its.ntia.gov/publications/details?pub=2465). No other calibration will be performed. 
 Run model with default calibration values. Median filtering is not necessary. Suitable for video systems that are known to never shift, scale, or change the luminance levels.
 
 ### 'rrtime' 
