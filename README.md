@@ -1,10 +1,10 @@
 # VQM
 ## Video Quality Metrics
 This repository contains the Video Quality Metric (VQM) software developed by ITS between 2002 and 2010. 
-The VQM algorithms estimate how people perceive video quality. These VQM algorithms compare the processed video (output) with the original video (input). These models are suitable when the original video is good quality or better. Quality problems from the camera and original production are not considered. 
+The VQM algorithms estimate how people perceive video quality. These VQM algorithms compare the processed video (output) with the original video (input). These models are suitable for use when the original video is good quality or better. Quality problems from the camera and original production are not considered. 
 The VQM tools are available free of charge for any commercial or non-commercial use, in accordance with the terms described in the [LICENSE](https://github.com/NTIA/vqm/blob/master/LICENSE.md).
 
-For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. 
+For each software package, there are three download options: the MATLAB® source, a 32-bit compiled version, and a 64-bit compiled version. In each case, the relevant documentation is provided. All source code was developed for MATLAB® R2013b (8.2). The code may not to perform as expected in other versions.
 
 The available software packages are:
 
@@ -30,7 +30,7 @@ Each metric is stored in this repository such that for the given version of a gi
 
 Readmes on how to use each metric are available under the name `<name>_pc_readme.pdf`.
 
-Note that this distribution does not include the MATLAB Runtime, which must first be installed before running any of the compiled versions of these metrics. The runtime can be installed using `MCRInstaller.exe`, located [here](https://www.mathworks.com/products/compiler/matlab-runtime.html). Be aware that the compiled versions of the metrics were compiled in MATLAB R2013b (8.2). Future versions of MATLAB may cause the code not to run. This issue applies to both the compiled code and the source code. 
+Note that this distribution does not include the MATLAB Runtime, which must first be installed before running any of the compiled versions of these metrics. The runtime can be installed using `MCRInstaller.exe`, located [here](https://www.mathworks.com/products/compiler/matlab-runtime.html). Be aware that the compiled versions of the metrics were compiled in MATLAB R2013b (8.2). The code may not perform as expected in other versions. This issue applies to both the compiled code and the source code. 
 
 ## Usage
 
