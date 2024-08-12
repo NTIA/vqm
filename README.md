@@ -48,7 +48,7 @@ BVQM includes a variety of calibration options, quality models, and graphical pr
 BVQM contains unnecessary functionality and residual code remaining from the metric development process. 
 
 ### Command Line Video Quality Metric (CVQM) Software
-CVQM is a Windows command line program for performing out-of-service / lab bench testing. The video quality calibration and metric algorithms within CVQM are basically identically to those offered by BVQM. 
+CVQM is a Windows command line program for performing out-of-service / lab bench testing. The video quality calibration and metric algorithms within CVQM are basically identical to those offered by BVQM. 
 The two differences are that (1) CVQM is called from a command line (e.g., Windows Accessory "Command Prompt"), and (2) CVQM cannot compare the results from multiple video clips to improve calibration accuracy.  
 CVQM runs on one pair of video files at a time, and writes results to files. 
 
@@ -58,22 +58,22 @@ CVQM runs on one pair of video files at a time, and writes results to files.
 * [Documentation](CVQM.md)
 
 CVQM is a clean implementation of the VQM metrics that are available in BVQM. 
-The software functionality is split to support an in-service RR system (i.e., live calculations  on the upstream and downstream video feeds, communicating via a secondary communication channel). 
+The software functionality is split to support an in-service RR system (i.e., live calculations on the upstream and downstream video feeds, communicating via a secondary communication channel). 
 
 ### PSNR
 This command-line MATALAB software calculates peak signal to noise ratio (PSNR) according to ITU-T Rec. J.340. Also computes PSNR with variable frame delays removed (PSNR-VFD). These metrics are also available in the BVQM and CVQM software.
 The algorithm is described [here](https://its.ntia.gov/publications/details.aspx?pub=2500).
 
 ### VFD
-This command-line MATLAB software calculates variable frame delay (VFD) between an original video sequence and a processed video sequence. This algorithm and code is used by BVQM, CVQM, and PSNR software packages.
+This command-line MATLAB software calculates variable frame delay (VFD) between an original video sequence and a processed video sequence. This algorithm and code are used by BVQM, CVQM, and PSNR software packages.
 The algorithm is described [here](https://its.ntia.gov/publications/2500.aspx).
 
 ### FDF
-This command-line MATLAB software calculates fraction dropped frames (FDF) from VFD statistics. This algorithm and code is used by BVQM, CVQM, and PSNR software packages.
+This command-line MATLAB software calculates fraction dropped frames (FDF) from VFD statistics. This algorithm and code are used by BVQM, CVQM, and PSNR software packages.
 The algorithm is described [here](https://its.ntia.gov/publications/2493.aspx).
 
 ### IVQM - Obsolete - Not Available
-The In-Service Video Qualtiy Metric (IVQM) was a "proof of concept" software implementation.
+The In-Service Video Quality Metric (IVQM) was a "proof of concept" software implementation.
 This software demonstrates that the reduced reference (RR) algorithms provided within BVQM and CVQM can actually run in-service. 
 
 The IVQM software is no longer available. 
@@ -82,7 +82,7 @@ The remainder of the code is provided by the CVQM software package.
 
 ### VQM - Obsolete - Not Available
 VQM_pc (compiled for Windows) and VQM_lx (compiled for Linux) have been replaced by BVQM. 
-This software was developped under a cooperative research and devleopment agreement (CRADA) by ITS and Intel. 
+This software was developed under a cooperative research and development agreement (CRADA) by ITS and Intel. 
 This was the first version of the ITS video quality models that was suitable for use by people outside of our laboratory. 
 The source code cannot be redistributed.
 The code cannot be compiled or run on modern operating systems.
