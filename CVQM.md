@@ -9,12 +9,12 @@ Any errors that occur are recorded in a file named after the processed video fil
 Type 1 errors are fatal data input/output issues (e.g., operation cannot continue due to invalid input argument, file read error, or file write error). Type 2 errors are calibration warnings (e.g., still sequence, temporal registration failure, spatial shift beyond search limits). Type 3 errors are non-fatal warnings.
 
 ## VQM Model Options
-The following VQM models options are available:
+The following VQM software's options are available:
 
 * 'none'- No model will be calculated - run calibration only (see below).
 * 'general' - NTIA General Model, as given in the ANSI T1.801.03-2003, ITU-T J.144 (03/04), ITU-R BT.1683 (06/04), and [NTIA TR-02-392](https://its.ntia.gov/publications/details?pub=2423). 
 * 'developers' - Developer's model, a fast running variant of the General Model, described in [NTIA TR-02-392](https://its.ntia.gov/publications/details?pub=2423)
-* 'lowbw' - Low Bandwidth Model, described [here](https://its.ntia.gov/publications/details?pub=2575)
+* 'lowbw' - Low Bandwidth Model, described in the paper [Low Bandwidth Reduced Reference Video Quality Monitoring System](https://its.ntia.gov/publications/details?pub=2575)
 * 'fastlowbw' - Fast Low Bandwidth Model, a fast running variant of the low bandwidth model 
 
 The CVQM software provides a clean implementation of these VQM models. 
